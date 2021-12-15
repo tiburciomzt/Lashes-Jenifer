@@ -1,10 +1,15 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 
 function Footer() {
     return (
-        <div>
-            
-        </div>
+        <footer className='text-center'>
+            <Container>
+                <Row>
+                    <Col>Copyright &copy; LashesJenifer</Col>
+                </Row>
+            </Container>
+        </footer>
     )
 }
 
