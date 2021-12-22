@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import Tecnicaspage from './pages/Tecnicaspage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Detailtecnicascreen from './pages/Detailtecnicascreen';
+import Tecnica from './components/Tecnica';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <main className='py-3'>
         <Container>
           <Routes>
-            <Route path='/' element={<Tecnicaspage />} /> 
-            <Route path='/tecnica/:id' element={<Detailtecnicascreen />} /> 
+            <Route path='/'   />
+            <Route path='/tecnicas'  element={<Tecnicaspage  /> } />
+            <Route path='/tecnica/:id' element={<Detailtecnicascreen  />} /> 
           </Routes>
         </Container>
       </main>
@@ -21,5 +23,7 @@ function App() {
       </BrowserRouter>
   );
 }
+
+
 
 export default App;
