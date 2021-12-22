@@ -9,8 +9,9 @@ function Tecnicaspage() {
             <h1>Últimas Técnicas del mes</h1>
             <Row>
                 {tecnicas.map(tecnica =>(
+                    
                     <Col key={tecnica._id} sm={12} md={6} lg={4} xl={3}>
-                    <Tecnica tecnica={tecnica}/>
+                    <Tecnica info_tecnica={tecnica}/>
                     </Col>
                 ))}
             </Row>
