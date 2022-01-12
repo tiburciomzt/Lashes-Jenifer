@@ -12,12 +12,12 @@ function Detailtecnicascreen() {
         <div>
             <Link to='/tecnicas' className='btn btn-light my-3'> Go back </Link>
             <Row>
-                <Col md={6}>
+                <Col md={5}>
                     <Image src={tecnic.image} alt={tecnic.name} fluid/>
                 </Col>
 
                 <Col md={3}>
-                    <ListGroup as='ul'>
+                    <ListGroup variant='flush' as='ul'>
                         <ListGroupItem as='li' active> <h3>{tecnic.name}</h3></ListGroupItem>
 
                         <ListGroupItem>
@@ -33,6 +33,34 @@ function Detailtecnicascreen() {
                         </ListGroupItem>
 
                     </ListGroup>
+                </Col>
+
+                <Col md={3}>
+                    <Card>
+                        <ListGroup variant="flush">
+                            <ListGroupItem>
+                                <Row>
+                                    <Col>Price: </Col>
+                                    <Col><strong>${tecnic.price}</strong></Col>
+                                </Row>
+                            </ListGroupItem>
+
+                            <ListGroupItem>
+                                <Row>
+                                    <Col>Status: </Col>
+                                    <Col>{tecnic.countInStock >0 ? 'In stock' : 'Out stock' }</Col>
+                                </Row>
+                            </ListGroupItem>      
+
+                            <ListGroupItem>
+                                <Row>
+                                <Button className='btn-block' type='button'>Hacer cita</Button>
+                                </Row>
+                            </ListGroupItem> 
+
+                        </ListGroup>
+                        
+                    </Card>
                 </Col>
 
             </Row>
