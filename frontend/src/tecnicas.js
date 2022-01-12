@@ -53,7 +53,7 @@ const tecnicas = [
     },
     {
       '_id': '5',
-      'name': 'Logitech G-Series Gaming Mouse',
+      'name': 'Póster manos',
       'image': '/images/hands.jpg',
       'description':
         'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
@@ -66,7 +66,7 @@ const tecnicas = [
     },
     {
       '_id': '6',
-      'name': 'Amazon Echo Dot 3rd Generation',
+      'name': 'Póster Lashes Jenifer',
       'image': '/images/lashes.jpg',
       'description':
         'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
